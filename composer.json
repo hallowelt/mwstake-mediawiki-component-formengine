@@ -1,0 +1,14 @@
+{
+	"name": "mediawiki/form-engine",
+	"license": "GPL-3.0-only",
+	"authors": [
+		{
+			"name": "Hallo Welt! GmbH",
+			"email": "info@hallowelt.com",
+			"homepage": "http://www.hallowelt.com"
+		}
+	],
+	"require": {
+		"composer/installers": "~1.0"
+	}
+}
