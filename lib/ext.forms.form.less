@@ -16,10 +16,14 @@
 	}
 }
 .mw-ext-forms-form {
-	margin: 20px;
-	padding: 40px 20px;
-	border: 2px solid #eaeaea;
-	border-radius: 10px;
+	/* This is needed to show the error/success messages */
+	padding-top: 30px;
+	&:not( .ext-forms-standalone-form ) {
+		margin: 20px;
+		padding: 40px 20px;
+		border: 2px solid #eaeaea;
+		border-radius: 10px;
+	}
 	position: relative;
 	.level-2 {
 		margin-left: 20px;
