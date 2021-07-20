@@ -24,6 +24,9 @@
 		border: 2px solid #eaeaea;
 		border-radius: 10px;
 	}
+	.oo-ui-flaggedElement-invalid {
+		border: 1px solid red;
+	}
 	position: relative;
 	.level-2 {
 		margin-left: 20px;
@@ -261,5 +264,14 @@
 		.oo-ui-labelWidget {
 			vertical-align: top;
 		}
+	}
+}
+
+.ext-forms-standalone-form {
+	.control-wrap .oo-ui-fieldLayout-field {
+		width: 56% !important;
+	}
+	&.nopadding {
+		padding: 0;
 	}
 }
