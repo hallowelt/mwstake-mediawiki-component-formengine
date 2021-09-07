@@ -11,9 +11,34 @@
 	"require": {
 		"composer/installers": "~1.0"
 	},
+	"require-dev": {
+		"jakub-onderka/php-parallel-lint": "1.0.0",
+		"jakub-onderka/php-console-highlighter": "0.4.0",
+		"mediawiki/mediawiki-codesniffer": "29.0.0",
+		"mediawiki/minus-x": "1.0.0",
+		"phpunit/phpunit": "^8.5"
+	},
 	"autoload": {
+		"psr-4": {
+			"MWStake\\MediaWiki\\Component\\FormEngine\\": "src/",
+			"MWStake\\MediaWiki\\Component\\FormEngine\\Tests\\": "tests/phpunit/"
+		},
 		"files": [
 			"bootstrap.php"
+		]
+	},
+	"scripts": {
+		"phpunit": [
+			"../../../tests/phpunit/phpunit.php -c .phpunit.xml"
+		],
+		"test": [
+			"parallel-lint . --exclude vendor --exclude node_modules",
+			"minus-x check .",
+			"phpcs -sp"
+		],
+		"fix": [
+			"minus-x fix .",
+			"phpcbf"
 		]
 	}
 }
