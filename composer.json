@@ -1,6 +1,7 @@
 {
 	"name": "mwstake/mediawiki-component-formengine",
 	"license": "GPL-3.0-only",
+	"version": "1.1",
 	"authors": [
 		{
 			"name": "Hallo Welt! GmbH",
