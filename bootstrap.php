@@ -13,7 +13,6 @@ define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '1.0.2' );
 $GLOBALS['wgHooks']['ResourceLoaderRegisterModules'][] = function( $resourceLoader ) {
 	$resourceLoader->register( ['ext.forms.init' => [
 		'localBasePath' => __DIR__ . '/lib' ,
-		'remoteExtPath' => '../vendor/mwstake/mediawiki-component-formengine/lib',
 		'scripts' => [ "ext.forms.init.js" ],
 		'messages' => [ "forms-session-loss-error" ],
 		'dependencies' => [
@@ -32,7 +31,6 @@ $GLOBALS['wgHooks']['ResourceLoaderRegisterModules'][] = function( $resourceLoad
 
 	$resourceLoader->register( ["ext.forms.define" => [
 		'localBasePath' => __DIR__ . '/lib' ,
-		'remoteExtPath' => '../vendor/mwstake/mediawiki-component-formengine/lib',
 		'scripts' => [ "ext.forms.define.js" ],
 		'dependencies' => [
 			"oojs-ui"
@@ -41,7 +39,6 @@ $GLOBALS['wgHooks']['ResourceLoaderRegisterModules'][] = function( $resourceLoad
 
 	$resourceLoader->register( [ "ext.forms.standalone" => [
 		'localBasePath' => __DIR__ . '/lib' ,
-		'remoteExtPath' => '../vendor/mwstake/mediawiki-component-formengine/lib',
 		'scripts' => [ "standalone/Form.js" ],
 		'dependencies' => [
 			"ext.forms.widgets"
@@ -50,7 +47,6 @@ $GLOBALS['wgHooks']['ResourceLoaderRegisterModules'][] = function( $resourceLoad
 
 	$resourceLoader->register( ["ext.forms.widgets" => [
 		'localBasePath' => __DIR__ . '/lib' ,
-		'remoteExtPath' => '../vendor/mwstake/mediawiki-component-formengine/lib',
 		'scripts' => [
 			"mixin/BookletLayoutParser.js",
 			"mixin/IndexLayoutParser.js",
