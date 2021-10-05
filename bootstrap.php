@@ -75,6 +75,7 @@ $GLOBALS['wgHooks']['ResourceLoaderRegisterModules'][] = function( $resourceLoad
 			"widget/view/OptionView.js",
 			"widget/view/CheckboxMultiselectView.js",
 			"widget/view/MenuTagMultiselectView.js",
+			"widget/view/Multiplier.js",
 			"widget/edit/CheckboxMultiselect.js",
 			"widget/view/RadioSelectView.js",
 			"widget/view/SectionLabel.js",
