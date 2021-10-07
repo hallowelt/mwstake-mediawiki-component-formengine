@@ -151,5 +151,5 @@ $GLOBALS['wgHooks']['ResourceLoaderRegisterModules'][] = function( $resourceLoad
 	] ] );
 };
 
-$GLOBALS['wgMessagesDirs']['mwstake-component-commonui'] = __DIR__ . '/i18n';
+$GLOBALS['wgMessagesDirs']['mwstake-component-formengine'] = __DIR__ . '/i18n';
 
