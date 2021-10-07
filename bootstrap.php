@@ -8,7 +8,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION' ) ) {
 	return;
 }
 
-define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '1.0.3' );
+define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '1.0.4' );
 
 $GLOBALS['wgHooks']['ResourceLoaderRegisterModules'][] = function( $resourceLoader ) {
 	$resourceLoader->register( ['ext.forms.init' => [
