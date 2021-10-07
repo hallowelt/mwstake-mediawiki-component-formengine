@@ -8,7 +8,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION' ) ) {
 	return;
 }
 
-define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '1.0.2' );
+define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '1.0.3' );
 
 $GLOBALS['wgHooks']['ResourceLoaderRegisterModules'][] = function( $resourceLoader ) {
 	$resourceLoader->register( ['ext.forms.init' => [
@@ -150,4 +150,6 @@ $GLOBALS['wgHooks']['ResourceLoaderRegisterModules'][] = function( $resourceLoad
 		]
 	] ] );
 };
+
+$GLOBALS['wgMessagesDirs']['mwstake-component-commonui'] = __DIR__ . '/i18n';
 
