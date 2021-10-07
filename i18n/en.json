@@ -160,6 +160,7 @@
 	"ext-forms-title-remove": "Remove",
 	"forms-form-view-widget-wikitext-parsing": "Parsing wikitext...",
 	"forms-form-view-widget-wikitext-parsing-error": "Error: Parse failed!",
+	"ext-forms-label-no-default-value": "No default value",
 
 	"forms-session-loss-error": "Form cannot be saved because your session is no longer valid",
 	"forms-form-editor-prop-targetTypeTemplate": "Template",
