@@ -14,7 +14,7 @@ $GLOBALS['wgHooks']['ResourceLoaderRegisterModules'][] = function( $resourceLoad
 	$resourceLoader->register( ['ext.forms.init' => [
 		'localBasePath' => __DIR__ . '/lib' ,
 		'scripts' => [ "ext.forms.init.js" ],
-		'messages' => [ "forms-session-loss-error" ],
+		'messages' => [ "mwstake-formengine-session-loss-error" ],
 		'dependencies' => [
 			"ext.forms.widgets",
 			"oojs-ui.styles.icons-content",
@@ -127,26 +127,26 @@ $GLOBALS['wgHooks']['ResourceLoaderRegisterModules'][] = function( $resourceLoad
 			"mediawiki.widgets.CategoryMultiselectWidget"
 		],
 		'messages' => [
-			"forms-form-picker-picker-label",
-			"forms-form-picker-layout-help",
-			"forms-form-picker-layout-label",
-			"forms-error-invalid-form",
-			"forms-form-loading-label",
-			"forms-form-submit-label",
-			"forms-form-reset-label",
-			"forms-form-cancel-label",
-			"forms-message-ack-button-tooltip",
-			"forms-form-validation-failed",
-			"forms-form-submit-success",
-			"forms-api-generic-error",
-			"forms-form-form-name-label",
-			"forms-edit-summary-placeholder",
-			"forms-inclusion-error-form-not-includable",
-			"forms-form-submit-ps-enabled-label",
-			"forms-form-save-label",
-			"forms-form-autosave-success",
-			"ext-forms-label-next-step",
-			"ext-forms-label-no-default-value"
+			"mwstake-formengine-form-picker-picker-label",
+			"mwstake-formengine-form-picker-layout-help",
+			"mwstake-formengine-form-picker-layout-label",
+			"mwstake-formengine-error-invalid-form",
+			"mwstake-formengine-form-loading-label",
+			"mwstake-formengine-form-submit-label",
+			"mwstake-formengine-form-reset-label",
+			"mwstake-formengine-form-cancel-label",
+			"mwstake-formengine-message-ack-button-tooltip",
+			"mwstake-formengine-form-validation-failed",
+			"mwstake-formengine-form-submit-success",
+			"mwstake-formengine-api-generic-error",
+			"mwstake-formengine-form-form-name-label",
+			"mwstake-formengine-edit-summary-placeholder",
+			"mwstake-formengine-inclusion-error-form-not-includable",
+			"mwstake-formengine-inclusion-form-submit-ps-enabled-label",
+			"mwstake-formengine-form-save-label",
+			"mwstake-formengine-form-autosave-success",
+			"mwstake-formengine-label-next-step",
+			"mwstake-formengine-no-default-value"
 		]
 	] ] );
 };
