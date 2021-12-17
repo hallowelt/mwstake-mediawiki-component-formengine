@@ -124,6 +124,7 @@ $GLOBALS['wgHooks']['ResourceLoaderRegisterModules'][] = function( $resourceLoad
 			"oojs-ui",
 			"ext.oOJSPlus.data",
 			"ext.oOJSPlus.widgets",
+			"mediawiki.widgets",
 			"mediawiki.widgets.CategoryMultiselectWidget"
 		],
 		'messages' => [
