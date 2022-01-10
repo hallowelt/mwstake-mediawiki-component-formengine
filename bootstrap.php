@@ -10,7 +10,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION' ) ) {
 
 define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '1.0.4' );
 
-MWStake\MediaWiki\Component\Bootstrapper\Bootstrapper::getInstance()
+MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 ->register( 'formengine', function () {
 	$GLOBALS['wgHooks']['ResourceLoaderRegisterModules'][] = function ( $resourceLoader ) {
 		$resourceLoader->register( [ 'ext.forms.init' => [
