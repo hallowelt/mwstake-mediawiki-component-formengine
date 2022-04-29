@@ -22,3 +22,36 @@ See also [`mwstake/mediawiki-componentloader`](https://github.com/hallowelt/mwst
 - `ext.forms.widgets`
 - `ext.forms.form.less`
 
+# Requiring additional RL modules
+Forms can sometimes use fields that are not loaded in the form package.
+To include those packages specify them in the definition
+
+	{
+		"name": "MyForm",
+		"rlDependencies": [ "my.module" ],
+		"items": {...},
+		...
+	}
+
+# Inline validation
+Validate functions can be declared on the widget definition, by using the `validate` key.
+This function is tricky as its called also from the context of the input, so no access to the 
+form object is possible. If you need to use other elements from the form, use this syntax
+
+	{
+			name: 'field1',
+			label: 'My field',
+			type: 'text',
+			validate: function( val ) {
+				var form = this;
+				if ( typeof this.getForm === 'function' ) {
+					form = this.getForm();
+				}
+				if ( !( form instanceof mw.ext.forms.widget.Form ) ) {
+					// No form context, we can return true here, as main validation on submit will kick in
+					return true;
+				}
+				// Return true/false...
+				// Or return a promise
+			}
+		}
