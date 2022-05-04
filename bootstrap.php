@@ -118,7 +118,9 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 				"formElement/layout/IndexLayoutTab.js",
 				"formElement/layout/IndexLayout.js",
 				"formElement/layout/FieldsetLayout.js",
-				"formElement/Title.js"
+				"formElement/Title.js",
+				"formElement/ComboBox.js",
+				"formElement/TagMultiselect.js",
 			],
 			'styles' => [ "ext.forms.form.less" ],
 			'dependencies' => [

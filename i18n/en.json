@@ -84,5 +84,10 @@
 	"mwstake-formengine-session-loss-error": "Form cannot be saved because your session is no longer valid",
 	"mwstake-formengine-type-title": "Title input",
 	"mwstake-formengine-type": "Type",
-	"mwstake-formengine-label-indicator":  "Indicator"
+	"mwstake-formengine-label-indicator": "Indicator",
+	"mwstake-formengine-type-combobox": "Combo box",
+	"mwstake-formengine-type-tag": "Tag multiselect",
+	"mwstake-formengine-label-input-position": "Input position",
+	"mwstake-formengine-label-allow-arbitrary": "Allow arbitrary",
+	"mwstake-formengine-label-allowed-values": "Allowed values"
 }
