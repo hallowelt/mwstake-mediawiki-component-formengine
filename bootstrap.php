@@ -63,6 +63,7 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 				"widget/edit/Checkbox.js",
 				"widget/edit/Radio.js",
 				"widget/edit/SelectFileInputWidget.js",
+				"widget/edit/Password.js",
 				"widget/edit/MultiStep.js",
 				"widget/edit/ProgressBar.js",
 				"widget/edit/Multiplier.js",
@@ -78,6 +79,7 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 				"widget/view/CheckboxMultiselectView.js",
 				"widget/view/MenuTagMultiselectView.js",
 				"widget/view/Multiplier.js",
+				"widget/view/PasswordView.js",
 				"widget/edit/CheckboxMultiselect.js",
 				"widget/view/RadioSelectView.js",
 				"widget/view/SectionLabel.js",
@@ -121,6 +123,7 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 				"formElement/layout/FieldsetLayout.js",
 				"formElement/Title.js",
 				"formElement/ComboBox.js",
+				"formElement/Password.js",
 				"formElement/TagMultiselect.js",
 				"formElement/Date.js"
 			],
@@ -153,7 +156,15 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 				"mwstake-formengine-form-save-label",
 				"mwstake-formengine-form-autosave-success",
 				"mwstake-formengine-label-next-step",
-				"mwstake-formengine-no-default-value"
+				"mwstake-formengine-no-default-value",
+				"mwstake-formengine-edit-password-strength-requirement-strong",
+				"mwstake-formengine-edit-password-strength-requirement-medium",
+				"mwstake-formengine-edit-password-label-password",
+				"mwstake-formengine-edit-password-label-password-re",
+				"mwstake-formengine-edit-password-strenght-indicator-stong",
+				"mwstake-formengine-edit-password-strenght-indicator-medium",
+				"mwstake-formengine-edit-password-strenght-indicator-weak",
+				"mwstake-formengine-edit-password-error-mismatch"
 			]
 		] ] );
 	};

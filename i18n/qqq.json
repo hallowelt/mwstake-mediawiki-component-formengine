@@ -90,5 +90,13 @@
 	"mwstake-formengine-label-input-position": "",
 	"mwstake-formengine-label-allow-arbitrary": "",
 	"mwstake-formengine-label-allowed-values": "",
-	"mwstake-formengine-label-date-default": ""
+	"mwstake-formengine-label-date-default": "",
+	"mwstake-formengine-edit-password-strength-requirement-strong": "",
+	"mwstake-formengine-edit-password-strength-requirement-medium": "",
+	"mwstake-formengine-edit-password-label-password": "",
+	"mwstake-formengine-edit-password-label-password-re": "",
+	"mwstake-formengine-edit-password-strenght-indicator-stong": "",
+	"mwstake-formengine-edit-password-strenght-indicator-medium": "",
+	"mwstake-formengine-edit-password-strenght-indicator-weak": "",
+	"mwstake-formengine-edit-password-error-mismatch": ""
 }
