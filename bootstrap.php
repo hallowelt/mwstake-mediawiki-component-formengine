@@ -81,6 +81,7 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 				"widget/edit/CheckboxMultiselect.js",
 				"widget/view/RadioSelectView.js",
 				"widget/view/SectionLabel.js",
+				"widget/edit/Date.js",
 				"widget/Form.js",
 				"widget/FormPicker.js",
 				"formElement/base/FormElement.js",
@@ -121,6 +122,7 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 				"formElement/Title.js",
 				"formElement/ComboBox.js",
 				"formElement/TagMultiselect.js",
+				"formElement/Date.js"
 			],
 			'styles' => [ "ext.forms.form.less" ],
 			'dependencies' => [
@@ -128,7 +130,8 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 				"oojs-ui",
 				"ext.oOJSPlus.data",
 				"ext.oOJSPlus.widgets",
-				"mediawiki.widgets.CategoryMultiselectWidget"
+				"mediawiki.widgets.CategoryMultiselectWidget",
+				"mediawiki.widgets.DateInputWidget"
 			],
 			'messages' => [
 				"mwstake-formengine-form-picker-picker-label",

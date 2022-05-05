@@ -84,5 +84,6 @@
 	"mwstake-formengine-session-loss-error": "TRANSLATE ME! - Form cannot be saved because your session is no longer valid",
 	"mwstake-formengine-type-title": "TRANSLATE ME! - Title input",
 	"mwstake-formengine-type": "TRANSLATE ME! - Type",
-	"mwstake-formengine-label-indicator": "TRANSLATE ME! - Indicator"
+	"mwstake-formengine-label-indicator": "TRANSLATE ME! - Indicator",
+	"mwstake-formengine-label-date-default": "Datum"
 }

@@ -89,5 +89,6 @@
 	"mwstake-formengine-type-tag": "Tag multiselect",
 	"mwstake-formengine-label-input-position": "Input position",
 	"mwstake-formengine-label-allow-arbitrary": "Allow arbitrary",
-	"mwstake-formengine-label-allowed-values": "Allowed values"
+	"mwstake-formengine-label-allowed-values": "Allowed values",
+	"mwstake-formengine-label-date-default": "Date"
 }

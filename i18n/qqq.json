@@ -89,5 +89,6 @@
 	"mwstake-formengine-type-tag":  "",
 	"mwstake-formengine-label-input-position": "",
 	"mwstake-formengine-label-allow-arbitrary": "",
-	"mwstake-formengine-label-allowed-values": ""
+	"mwstake-formengine-label-allowed-values": "",
+	"mwstake-formengine-label-date-default": ""
 }
