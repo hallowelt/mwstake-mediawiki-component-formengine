@@ -124,6 +124,7 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 				"formElement/ComboBox.js",
 				"formElement/Password.js",
 				"formElement/TagMultiselect.js",
+				"formElement/Date.js"
 			],
 			'styles' => [ "ext.forms.form.less" ],
 			'dependencies' => [
@@ -131,7 +132,8 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 				"oojs-ui",
 				"ext.oOJSPlus.data",
 				"ext.oOJSPlus.widgets",
-				"mediawiki.widgets.CategoryMultiselectWidget"
+				"mediawiki.widgets.CategoryMultiselectWidget",
+				"mediawiki.widgets.DateInputWidget"
 			],
 			'messages' => [
 				"mwstake-formengine-form-picker-picker-label",
