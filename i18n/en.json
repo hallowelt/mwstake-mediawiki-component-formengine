@@ -90,7 +90,6 @@
 	"mwstake-formengine-label-input-position": "Input position",
 	"mwstake-formengine-label-allow-arbitrary": "Allow arbitrary",
 	"mwstake-formengine-label-allowed-values": "Allowed values",
-	"mwstake-formengine-label-date-default": "Date",
 	"mwstake-formengine-edit-password-strength-requirement-strong": "Password must contain a lowercased letter, and uppercased letter, a number, an special character and must be at least 8 characters long",
 	"mwstake-formengine-edit-password-strength-requirement-medium": "Password must contain a lowercased letter, and uppercased letter, a number, an special character and must be at least 6 characters long",
 	"mwstake-formengine-edit-password-label-password": "Password",

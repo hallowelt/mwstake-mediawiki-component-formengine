@@ -83,7 +83,6 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 				"widget/edit/CheckboxMultiselect.js",
 				"widget/view/RadioSelectView.js",
 				"widget/view/SectionLabel.js",
-				"widget/edit/Date.js",
 				"widget/Form.js",
 				"widget/FormPicker.js",
 				"formElement/base/FormElement.js",
