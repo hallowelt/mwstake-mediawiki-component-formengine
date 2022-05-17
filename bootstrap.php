@@ -160,9 +160,9 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 				"mwstake-formengine-edit-password-strength-requirement-medium",
 				"mwstake-formengine-edit-password-label-password",
 				"mwstake-formengine-edit-password-label-password-re",
-				"mwstake-formengine-edit-password-strenght-indicator-stong",
-				"mwstake-formengine-edit-password-strenght-indicator-medium",
-				"mwstake-formengine-edit-password-strenght-indicator-weak",
+				"mwstake-formengine-edit-password-strength-indicator-stong",
+				"mwstake-formengine-edit-password-strength-indicator-medium",
+				"mwstake-formengine-edit-password-strength-indicator-weak",
 				"mwstake-formengine-edit-password-error-mismatch"
 			]
 		] ] );

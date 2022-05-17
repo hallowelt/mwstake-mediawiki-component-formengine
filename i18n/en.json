@@ -94,8 +94,8 @@
 	"mwstake-formengine-edit-password-strength-requirement-medium": "Password must contain a lowercased letter, and uppercased letter, a number, an special character and must be at least 6 characters long",
 	"mwstake-formengine-edit-password-label-password": "Password",
 	"mwstake-formengine-edit-password-label-password-re": "Retype password",
-	"mwstake-formengine-edit-password-strenght-indicator-stong": "Strong",
-	"mwstake-formengine-edit-password-strenght-indicator-medium": "Medium",
-	"mwstake-formengine-edit-password-strenght-indicator-weak": "Weak",
+	"mwstake-formengine-edit-password-strength-indicator-stong": "Strong",
+	"mwstake-formengine-edit-password-strength-indicator-medium": "Medium",
+	"mwstake-formengine-edit-password-strength-indicator-weak": "Weak",
 	"mwstake-formengine-edit-password-error-mismatch": "Passwords do not match!"
 }
