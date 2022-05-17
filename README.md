@@ -42,20 +42,20 @@ form object is possible. If you need to use other elements from the form, use th
 
 ```js
 {
-		name: 'field1',
-		label: 'My field',
-		type: 'text',
-		validate: function( val ) {
-			var form = this;
-			if ( typeof this.getForm === 'function' ) {
-				form = this.getForm();
-			}
-			if ( !( form instanceof mw.ext.forms.widget.Form ) ) {
-				// No form context, we can return true here, as main validation on submit will kick in
-				return true;
-			}
-			// Return true/false...
-			// Or return a promise
+	name: 'field1',
+	label: 'My field',
+	type: 'text',
+	validate: function( val ) {
+		var form = this;
+		if ( typeof this.getForm === 'function' ) {
+			form = this.getForm();
 		}
+		if ( !( form instanceof mw.ext.forms.widget.Form ) ) {
+			// No form context, we can return true here, as main validation on submit will kick in
+			return true;
+		}
+		// Return true/false...
+		// Or return a promise
 	}
+}
 ```
