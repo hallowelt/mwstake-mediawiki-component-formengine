@@ -26,18 +26,21 @@ See also [`mwstake/mediawiki-componentloader`](https://github.com/hallowelt/mwst
 Forms can sometimes use fields that are not loaded in the form package.
 To include those packages specify them in the definition
 
+```js
 	{
 		"name": "MyForm",
 		"rlDependencies": [ "my.module" ],
 		"items": {...},
 		...
 	}
+```
 
 # Inline validation
 Validate functions can be declared on the widget definition, by using the `validate` key.
 This function is tricky as its called also from the context of the input, so no access to the 
 form object is possible. If you need to use other elements from the form, use this syntax
 
+```js
 	{
 			name: 'field1',
 			label: 'My field',
@@ -55,3 +58,4 @@ form object is possible. If you need to use other elements from the form, use th
 				// Or return a promise
 			}
 		}
+```
