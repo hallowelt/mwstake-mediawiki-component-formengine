@@ -9,7 +9,7 @@ class FormElementModule extends \ResourceLoaderFileModule {
 		if ( !is_array( $externalElements ) ) {
 			$externalElements = [];
 		}
-		$options['dependencies'] = array_merge( $externalElements, [ 'ext.forms.widgets' ] );
+		$options['dependencies'] = array_merge( [ 'ext.forms.widgets' ], $externalElements );
 		parent::__construct( $options );
 	}
 }

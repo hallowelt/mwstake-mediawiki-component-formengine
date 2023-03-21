@@ -8,7 +8,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION' ) ) {
 	return;
 }
 
-define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '2.0.7' );
+define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '2.0.8' );
 
 MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 ->register( 'formengine', function () {
@@ -46,6 +46,15 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 			'scripts' => [ "standalone/Form.js" ],
 			'dependencies' => [
 				"ext.forms.formelements"
+			]
+		] ] );
+
+		$resourceLoader->register( [ "ext.forms.formelements.bootstrap" => [
+			'localBasePath' => __DIR__ . '/lib' ,
+			'scripts' => [
+				"formElement/base/FormElement.js",
+				"formElement/base/InputFormElement.js",
+				"formElement/base/FormLayoutElement.js",
 			]
 		] ] );
 
@@ -92,9 +101,6 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 				"widget/view/SectionLabel.js",
 				"widget/Form.js",
 				"widget/FormPicker.js",
-				"formElement/base/FormElement.js",
-				"formElement/base/InputFormElement.js",
-				"formElement/base/FormLayoutElement.js",
 				"formElement/Text.js",
 				"formElement/TextArea.js",
 				"formElement/WikiText.js",
@@ -138,7 +144,8 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 				"ext.forms.define",
 				"oojs-ui",
 				"mediawiki.widgets.CategoryMultiselectWidget",
-				"mediawiki.widgets.DateInputWidget"
+				"mediawiki.widgets.DateInputWidget",
+				"ext.forms.formelements.bootstrap"
 			],
 			'messages' => [
 				"mwstake-formengine-form-picker-picker-label",

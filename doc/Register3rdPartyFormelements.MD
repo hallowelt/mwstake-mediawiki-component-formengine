@@ -11,5 +11,7 @@ You also need to register the RL module that loads this class:
 
 	$GLOBALS['mwsgFormEngineElementModules'][] = 'ext.myModule';
 
+Your module must depend on `ext.forms.formelements.bootstrap` module.
+
 If your extension does not alrady do it, make sure to init the formengine component BEFORE registering your module
 by calling `mwsInitComponents();`
