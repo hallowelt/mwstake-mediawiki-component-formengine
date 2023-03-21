@@ -8,17 +8,19 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION' ) ) {
 	return;
 }
 
-define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '2.0.6' );
+define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '2.0.7' );
 
 MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 ->register( 'formengine', function () {
+	$GLOBALS['mwsgFormEngineElementModules'] = [];
+
 	$GLOBALS['wgHooks']['ResourceLoaderRegisterModules'][] = function ( $resourceLoader ) {
 		$resourceLoader->register( [ 'ext.forms.init' => [
 			'localBasePath' => __DIR__ . '/lib' ,
 			'scripts' => [ "ext.forms.init.js" ],
 			'messages' => [ "mwstake-formengine-session-loss-error" ],
 			'dependencies' => [
-				"ext.forms.widgets",
+				"ext.forms.formelements",
 				"oojs-ui.styles.icons-content",
 				"oojs-ui.styles.icons-moderation",
 				"oojs-ui.styles.icons-editing-core",
@@ -43,8 +45,13 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 			'localBasePath' => __DIR__ . '/lib' ,
 			'scripts' => [ "standalone/Form.js" ],
 			'dependencies' => [
-				"ext.forms.widgets"
+				"ext.forms.formelements"
 			]
+		] ] );
+
+		$resourceLoader->register( [ "ext.forms.formelements" => [
+			'localBasePath' => __DIR__ . '/lib' ,
+			'class' => \MWStake\MediaWiki\Component\FormEngine\FormElementModule::class
 		] ] );
 
 		$resourceLoader->register( [ "ext.forms.widgets" => [
