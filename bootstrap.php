@@ -8,7 +8,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION' ) ) {
 	return;
 }
 
-define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '2.0.8' );
+define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '2.0.9' );
 
 MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 ->register( 'formengine', function () {
@@ -55,6 +55,9 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 				"formElement/base/FormElement.js",
 				"formElement/base/InputFormElement.js",
 				"formElement/base/FormLayoutElement.js",
+			],
+			'dependencies' => [
+				'ext.forms.define'
 			]
 		] ] );
 
