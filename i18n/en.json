@@ -87,6 +87,7 @@
 	"mwstake-formengine-no-default-value": "No default value",
 	"mwstake-formengine-session-loss-error": "Form cannot be saved because your session is no longer valid",
 	"mwstake-formengine-type-title": "Title input",
+	"mwstake-formengine-type-message": "Message banner",
 	"mwstake-formengine-type": "Type",
 	"mwstake-formengine-label-indicator": "Indicator",
 	"mwstake-formengine-type-combobox": "Combo box",

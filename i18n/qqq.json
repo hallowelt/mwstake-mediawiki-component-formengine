@@ -88,6 +88,7 @@
 	"mwstake-formengine-session-loss-error": "Error message shown on save",
 	"mwstake-formengine-type-title": "Selection option label",
 	"mwstake-formengine-type": "Input field label",
+	"mwstake-formengine-type-message": "Field label",
 	"mwstake-formengine-label-indicator": "Input field label",
 	"mwstake-formengine-type-combobox": "Selection option label",
 	"mwstake-formengine-type-tag": "Selection option label",

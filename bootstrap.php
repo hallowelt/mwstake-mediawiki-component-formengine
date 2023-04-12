@@ -8,7 +8,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION' ) ) {
 	return;
 }
 
-define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '2.0.10' );
+define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '2.0.11' );
 
 MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 ->register( 'formengine', function () {
@@ -106,13 +106,14 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 				"widget/FormPicker.js",
 				"formElement/Text.js",
 				"formElement/TextArea.js",
-				"formElement/WikiText.js",
 				"formElement/StaticWikiText.js",
+				"formElement/WikiText.js",
 				"formElement/Text.js",
 				"formElement/Button.js",
 				"formElement/CategoryMultiselect.js",
 				"formElement/Checkbox.js",
 				"formElement/Multiplier.js",
+				"formElement/Message.js",
 				"formElement/FormImport.js",
 				"formElement/Listeners.js",
 				"formElement/MenuTagMultiselect.js",
@@ -178,7 +179,8 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 				"mwstake-formengine-edit-password-strength-indicator-stong",
 				"mwstake-formengine-edit-password-strength-indicator-medium",
 				"mwstake-formengine-edit-password-strength-indicator-weak",
-				"mwstake-formengine-edit-password-error-mismatch"
+				"mwstake-formengine-edit-password-error-mismatch",
+				"mwstake-formengine-type-message"
 			]
 		] ] );
 	};
