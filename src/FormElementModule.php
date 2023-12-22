@@ -2,7 +2,9 @@
 
 namespace MWStake\MediaWiki\Component\FormEngine;
 
-class FormElementModule extends \ResourceLoaderFileModule {
+use MediaWiki\ResourceLoader\FileModule as ResourceLoaderFileModule;
+
+class FormElementModule extends ResourceLoaderFileModule {
 	public function __construct() {
 		$options['localBasePath'] = dirname( __DIR__ ) . '/lib';
 		$externalElements = $GLOBALS['mwsgFormEngineElementModules'];
