@@ -11,10 +11,10 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION' ) ) {
 define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '2.0.13' );
 
 MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
-->register( 'formengine', function () {
+->register( 'formengine', static function () {
 	$GLOBALS['mwsgFormEngineElementModules'] = [];
 
-	$GLOBALS['wgHooks']['ResourceLoaderRegisterModules'][] = function ( $resourceLoader ) {
+	$GLOBALS['wgHooks']['ResourceLoaderRegisterModules'][] = static function ( $resourceLoader ) {
 		$resourceLoader->register( [ 'ext.forms.init' => [
 			'localBasePath' => __DIR__ . '/lib' ,
 			'scripts' => [ "ext.forms.init.js" ],
