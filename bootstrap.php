@@ -8,7 +8,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION' ) ) {
 	return;
 }
 
-define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '2.0.14' );
+define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '2.0.15' );
 
 MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 ->register( 'formengine', static function () {
@@ -73,7 +73,7 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 				"mixin/IndexLayoutParser.js",
 				"mixin/DefinitionParser.js",
 				"mixin/FormLoadingAlert.js",
-				"mixin/FloatableButtons.js",
+				"mixin/ButtonsToolbar.js",
 				"mixin/EditSummary.js",
 				"mixin/Message.js",
 				"mixin/Autosave.js",

@@ -2,12 +2,6 @@
 	margin:20px;
 }
 
-.ext-forms-tag-error {
-	padding: 20px;
-	background-color: #ffa3a3;
-	border-radius: 10px;
-}
-
 .field-button {
 	width: 49%;
 	margin-top: 10px;
@@ -16,13 +10,8 @@
 	}
 }
 .mw-ext-forms-form {
-	/* This is needed to show the error/success messages */
-	padding-top: 30px;
-	&:not( .ext-forms-standalone-form ) {
-		margin: 20px;
-		padding: 40px 20px;
-		border: 2px solid #eaeaea;
-		border-radius: 10px;
+	.mw-ext-forms-message-cnt {
+		margin-bottom: 10px;
 	}
 	.oo-ui-flaggedElement-invalid {
 		border: 1px solid red;
@@ -40,43 +29,6 @@
 	.mw-ext-forms-form-loading-alert {
 		text-align: center;
 	}
-	.ext-mw-forms-form-buttons {
-		padding: 10px 10px 3px 10px;
-		text-align: right;
-		&.float-buttons {
-			background-color: #eaeaea;
-			-webkit-border-radius: 10px;
-			-moz-border-radius: 10px;
-			border-radius: 10px;
-			position: -webkit-sticky;
-			position: sticky;
-			bottom: 1px;
-			z-index: 20;
-			margin-top: 10px;
-		}
-	}
-	.mw-ext-forms-message-cnt {
-		position: absolute;
-		width: 100%;
-		border-radius: 10px 10px 0 0;
-		left: 0;
-		top: 0;
-		padding: 3px 20px 3px 10px;
-		&.type-error {
-			background-color: #ffa4a4;
-		}
-		&.type-ok {
-			background-color: #9cf0ac;
-		}
-		&.type-info {
-			background-color: #9ec5ff;
-		}
-		.oo-ui-buttonWidget {
-			position: absolute;
-			right: 0;
-			top: -4px;
-		}
- 	}
 	.forms-form-edit-layout {
 		.oo-ui-fieldLayout-header {
 			margin-right: 4% !important;
@@ -108,6 +60,15 @@
 		display: block !important;
 		margin-top:20px;
 		font-size: 1.2em;
+	}
+	.form-instance-toolbar {
+		margin-bottom: 10px;
+		.oo-ui-barToolGroup.actions {
+			float: right;
+			.oo-ui-tool a {
+				padding: 12px !important;
+			}
+		}
 	}
 }
 
@@ -275,8 +236,5 @@
 .ext-forms-standalone-form {
 	.control-wrap .oo-ui-fieldLayout-field {
 		width: 56% !important;
-	}
-	&.nopadding {
-		padding: 0;
 	}
 }
