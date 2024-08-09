@@ -8,7 +8,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION' ) ) {
 	return;
 }
 
-define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '2.0.15' );
+define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '2.0.16' );
 
 MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 ->register( 'formengine', static function () {
@@ -141,7 +141,9 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 				"formElement/ComboBox.js",
 				"formElement/Password.js",
 				"formElement/TagMultiselect.js",
-				"formElement/Date.js"
+				"formElement/Date.js",
+				"widget/view/HorizontalRule.js",
+				"formElement/HorizontalRule.js",
 			],
 			'styles' => [ "ext.forms.form.less" ],
 			'dependencies' => [
