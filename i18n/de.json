@@ -1,7 +1,4 @@
 {
-	"mwstake-formengine-form-picker-picker-label": "Option auswählen...",
-	"mwstake-formengine-form-picker-layout-help": "Wähle ein Formular zum Erstellen der Instanz aus",
-	"mwstake-formengine-form-picker-layout-label": "Formular zum Erstellen auswählen",
 	"mwstake-formengine-error-invalid-form": "Formulardefinition ist ungültig!",
 	"mwstake-formengine-form-loading-label": "Das Formular wird geladen...",
 	"mwstake-formengine-form-submit-label": "Abschicken",
