@@ -98,6 +98,7 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 			"widget/view/RadioSelectView.js",
 			"widget/view/SectionLabel.js",
 			"widget/Form.js",
+			"widget/FormPicker.js",
 			"formElement/Text.js",
 			"formElement/TextArea.js",
 			"formElement/StaticWikiText.js",
@@ -148,6 +149,9 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 			"ext.forms.formelements.bootstrap"
 		],
 		'messages' => [
+			"mwstake-formengine-form-picker-picker-label",
+			"mwstake-formengine-form-picker-layout-help",
+			"mwstake-formengine-form-picker-layout-label",
 			"mwstake-formengine-error-invalid-form",
 			"mwstake-formengine-form-loading-label",
 			"mwstake-formengine-form-submit-label",
