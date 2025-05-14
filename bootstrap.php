@@ -4,7 +4,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION' ) ) {
 	return;
 }
 
-define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '3.0.1' );
+define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '3.0.2' );
 
 MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 ->register( 'formengine', static function () {
@@ -97,6 +97,8 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 			"widget/edit/CheckboxMultiselect.js",
 			"widget/view/RadioSelectView.js",
 			"widget/view/SectionLabel.js",
+			"widget/view/LabelView.js",
+			"widget/view/MessageView.js",
 			"widget/Form.js",
 			"formElement/Text.js",
 			"formElement/TextArea.js",
