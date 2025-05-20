@@ -10,6 +10,9 @@ class StandaloneFormSpecification implements IFormSpecification {
 	/** @var array */
 	private array $buttons = [];
 
+	/** @var bool */
+	private bool $errorReporting = false;
+
 	/**
 	 * @param array $items
 	 * @return void
@@ -27,6 +30,14 @@ class StandaloneFormSpecification implements IFormSpecification {
 	}
 
 	/**
+	 * @param bool $errorReporting
+	 * @return void
+	 */
+	public function setErrorReporting( bool $errorReporting ) {
+		$this->errorReporting = $errorReporting;
+	}
+
+	/**
 	 * @return string[]
 	 */
 	public function getSerialized(): array {
@@ -34,7 +45,8 @@ class StandaloneFormSpecification implements IFormSpecification {
 			'definition' => [
 				'items' => $this->items,
 				'buttons' => $this->buttons,
-			]
+			],
+			'errorReporting' => $this->errorReporting
 		];
 	}
 }
