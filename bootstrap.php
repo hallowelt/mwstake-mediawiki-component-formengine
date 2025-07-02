@@ -11,7 +11,7 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 	$GLOBALS['mwsgFormEngineElementModules'] = [];
 
 	$GLOBALS['wgResourceModules']['ext.forms.init'] = [
-		'localBasePath' => __DIR__ . '/lib' ,
+		'localBasePath' => __DIR__ . '/lib',
 		'scripts' => [ "ext.forms.init.js" ],
 		'messages' => [ "mwstake-formengine-session-loss-error" ],
 		'dependencies' => [
@@ -29,7 +29,7 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 	];
 
 	$GLOBALS['wgResourceModules']['ext.forms.define'] = [
-		'localBasePath' => __DIR__ . '/lib' ,
+		'localBasePath' => __DIR__ . '/lib',
 		'scripts' => [ "ext.forms.define.js" ],
 		'dependencies' => [
 			"oojs-ui"
@@ -37,7 +37,7 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 	];
 
 	$GLOBALS['wgResourceModules']['ext.forms.standalone'] = [
-		'localBasePath' => __DIR__ . '/lib' ,
+		'localBasePath' => __DIR__ . '/lib',
 		'scripts' => [ "standalone/Form.js" ],
 		'dependencies' => [
 			"ext.forms.formelements"
@@ -45,7 +45,7 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 	];
 
 	$GLOBALS['wgResourceModules']['ext.forms.formelements.bootstrap'] = [
-		'localBasePath' => __DIR__ . '/lib' ,
+		'localBasePath' => __DIR__ . '/lib',
 		'scripts' => [
 			"formElement/base/FormElement.js",
 			"formElement/base/InputFormElement.js",
@@ -57,12 +57,12 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 	];
 
 	$GLOBALS['wgResourceModules']['ext.forms.formelements'] = [
-		'localBasePath' => __DIR__ . '/lib' ,
+		'localBasePath' => __DIR__ . '/lib',
 		'class' => \MWStake\MediaWiki\Component\FormEngine\FormElementModule::class
 	];
 
 	$GLOBALS['wgResourceModules']['ext.forms.widgets'] = [
-		'localBasePath' => __DIR__ . '/lib' ,
+		'localBasePath' => __DIR__ . '/lib',
 		'scripts' => [
 			"mixin/BookletLayoutParser.js",
 			"mixin/IndexLayoutParser.js",
