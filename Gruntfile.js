@@ -23,7 +23,9 @@ module.exports = function ( grunt ) {
 				'!vendor/**'
 			]
 		},
-		banana: 'i18n'
+		banana: {
+			all: 'i18n/'
+		}
 	} );
 
 	grunt.registerTask( 'test', [ 'eslint', 'stylelint', 'banana' ] );
