@@ -148,7 +148,7 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 			"ext.forms.define",
 			"oojs-ui",
 			"mediawiki.widgets.CategoryMultiselectWidget",
-			"mediawiki.widgets.DateInputWidget",
+			"ext.oOJSPlus.widgets",
 			"ext.forms.formelements.bootstrap",
 			"oojs-ui.styles.icons-editing-advanced"
 		],
