@@ -21,15 +21,6 @@
 		"php-parallel-lint/php-console-highlighter": "1.0.0",
 		"php-parallel-lint/php-parallel-lint": "1.4.0"
 	},
-	"autoload": {
-		"psr-4": {
-			"MWStake\\MediaWiki\\Component\\FormEngine\\": "src/",
-			"MWStake\\MediaWiki\\Component\\FormEngine\\Tests\\": "tests/phpunit/"
-		},
-		"files": [
-			"bootstrap.php"
-		]
-	},
 	"scripts": {
 		"test": [
 			"parallel-lint . --exclude vendor --exclude node_modules",
@@ -42,6 +33,15 @@
 		],
 		"phan": "phan -d . --long-progress-bar",
 		"phpcs": "phpcs -sp --cache"
+	},
+	"autoload": {
+		"psr-4": {
+			"MWStake\\MediaWiki\\Component\\FormEngine\\": "src/",
+			"MWStake\\MediaWiki\\Component\\FormEngine\\Tests\\": "tests/phpunit/"
+		},
+		"files": [
+			"bootstrap.php"
+		]
 	},
 	"config": {
 		"allow-plugins": {
